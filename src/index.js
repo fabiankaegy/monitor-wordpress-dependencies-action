@@ -148,11 +148,6 @@ async function run(octokit, context, token) {
 
 	const diff = await plugin.getDiff(oldSizes, newSizes);
 
-	startGroup(`Size Differences:`);
-	const cliText = await plugin.printSizes(diff);
-	console.log(cliText);
-	endGroup();
-
 	const markdownDiff = diffTable(diff, {
 		collapseUnchanged: toBool(getInput('collapse-unchanged')),
 		omitUnchanged: toBool(getInput('omit-unchanged')),
