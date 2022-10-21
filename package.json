@@ -17,6 +17,7 @@
 	"bugs": {
 		"url": "https://github.com/fabiankaegy/monitor-generated-wordpress-dependencies-action/issues"
 	},
+	"type": "module",
 	"homepage": "https://github.com/fabiankaegy/monitor-generated-wordpress-dependencies-action#readme",
 	"dependencies": {
 		"@actions/core": "^1.10.0",
