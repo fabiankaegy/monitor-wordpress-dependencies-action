@@ -1,10 +1,10 @@
 import { getAssetDependencies, toMap, dedupe } from './utils';
 
-const path = require('path');
-const promisify = require('util.promisify');
-const globPromise = require('glob');
-const minimatch = require('minimatch');
-const fs = require('fs-extra');
+import path from 'path';
+import promisify from 'util.promisify';
+import globPromise from 'glob';
+import minimatch from 'minimatch';
+import fs from 'fs-extra';
 
 const glob = promisify(globPromise);
 
