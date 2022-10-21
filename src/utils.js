@@ -96,7 +96,7 @@ export function diffTable(files, { collapseUnchanged, omitUnchanged, minimumChan
 	for (const file of files) {
 		const { filename, size, delta } = file;
 
-		const isUnchanged = delta.length;
+		const isUnchanged = delta?.length;
 
 		if (isUnchanged && omitUnchanged) continue;
 
