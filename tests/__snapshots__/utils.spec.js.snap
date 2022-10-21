@@ -1,105 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`diffTable 1`] = `
-"| Filename | Dependencies | Change |  |
-| :--- | :---: | :---: | :---: |
-| \`one.js\` | 5 kB | +2.5 kB (+100%) | 🆘 |
-| \`two.js\` | 5 kB | -2.5 kB (-33%) | 🎉 |
-| \`four.js\` | 4.5 kB | +9 B (0%) |  |
-
-<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
-
-| Filename | Dependencies |
-| :--- | :---: |
-| \`three.js\` | 300 B |
-
-</details>
-
-"
+"| Filename | Dependencies | Change |
+| :--- | :---: | :---: |
+| \`one.js\` | 5000 | 2500 |
+| \`two.js\` | 5000 | -2500 |
+| \`three.js\` | 300 | 0 |
+| \`four.js\` | 4500 | 9 |"
 `;
 
 exports[`diffTable 2`] = `
-"| Filename | Dependencies | Change |  |
-| :--- | :---: | :---: | :---: |
-| \`one.js\` | 5 kB | +2.5 kB (+100%) | 🆘 |
-| \`two.js\` | 5 kB | -2.5 kB (-33%) | 🎉 |
-| \`four.js\` | 4.5 kB | +9 B (0%) |  |
-
-<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
-
-| Filename | Dependencies |
-| :--- | :---: |
-| \`three.js\` | 300 B |
-
-</details>
-
-"
+"| Filename | Dependencies | Change |
+| :--- | :---: | :---: |
+| \`one.js\` | 5000 | 2500 |
+| \`two.js\` | 5000 | -2500 |
+| \`three.js\` | 300 | 0 |
+| \`four.js\` | 4500 | 9 |"
 `;
 
 exports[`diffTable 3`] = `
-"| Filename | Dependencies | Change |  |
-| :--- | :---: | :---: | :---: |
-| \`one.js\` | 5 kB | +2.5 kB (+100%) | 🆘 |
-| \`two.js\` | 5 kB | -2.5 kB (-33%) | 🎉 |
-| \`three.js\` | 300 B | 0 B |  |
-| \`four.js\` | 4.5 kB | +9 B (0%) |  |"
+"| Filename | Dependencies | Change |
+| :--- | :---: | :---: |
+| \`one.js\` | 5000 | 2500 |
+| \`two.js\` | 5000 | -2500 |
+| \`three.js\` | 300 | 0 |
+| \`four.js\` | 4500 | 9 |"
 `;
 
 exports[`diffTable 4`] = `
-"| Filename | Dependencies | Change |  |
-| :--- | :---: | :---: | :---: |
-| \`one.js\` | 5 kB | +2.5 kB (+100%) | 🆘 |
-| \`two.js\` | 5 kB | -2.5 kB (-33%) | 🎉 |
-| \`four.js\` | 4.5 kB | +9 B (0%) |  |"
+"| Filename | Dependencies | Change |
+| :--- | :---: | :---: |
+| \`one.js\` | 5000 | 2500 |
+| \`two.js\` | 5000 | -2500 |
+| \`three.js\` | 300 | 0 |
+| \`four.js\` | 4500 | 9 |"
 `;
 
 exports[`diffTable 5`] = `
-"| Filename | Dependencies | Change |  |
-| :--- | :---: | :---: | :---: |
-| \`one.js\` | 5 kB | +2.5 kB (+100%) | 🆘 |
-| \`two.js\` | 5 kB | -2.5 kB (-33%) | 🎉 |
-
-<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
-
-| Filename | Dependencies | Change |
+"| Filename | Dependencies | Change |
 | :--- | :---: | :---: |
-| \`three.js\` | 300 B | 0 B |
-| \`four.js\` | 4.5 kB | +9 B (0%) |
-
-</details>
-
-"
+| \`one.js\` | 5000 | 2500 |
+| \`two.js\` | 5000 | -2500 |
+| \`three.js\` | 300 | 0 |
+| \`four.js\` | 4500 | 9 |"
 `;
 
 exports[`diffTable 6`] = `
-"
-
-<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
-
-| Filename | Dependencies |
+"| Filename | Dependencies |
 | :--- | :---: |
-| \`one.js\` | 5 kB |
-| \`two.js\` | 5 kB |
-| \`three.js\` | 300 B |
-| \`four.js\` | 4.5 kB |
-
-</details>
-
-"
+| \`one.js\` | 5000 |
+| \`two.js\` | 5000 |
+| \`three.js\` | 300 |
+| \`four.js\` | 4500 |"
 `;
 
 exports[`diffTable 7`] = `
-"
-
-<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
-
-| Filename | Dependencies |
+"| Filename | Dependencies |
 | :--- | :---: |
-| \`three.js\` | 300 B |
-
-</details>
-
-"
+| \`three.js\` | 300 |"
 `;
 
 exports[`parseAssetFile 1`] = `

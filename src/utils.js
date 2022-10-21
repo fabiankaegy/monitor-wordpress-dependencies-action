@@ -34,25 +34,6 @@ export function getDeltaText(delta, originalSize) {
 }
 
 /**
- * @param {number} delta
- * @param {number} originalSize
- */
-export function iconForDifference(delta, originalSize) {
-	if (originalSize === 0) return '🆕';
-
-	const percentage = Math.round((delta / originalSize) * 100);
-	if (percentage >= 50) return '🆘';
-	else if (percentage >= 20) return '🚨';
-	else if (percentage >= 10) return '⚠️';
-	else if (percentage >= 5) return '🔍';
-	else if (percentage <= -50) return '🏆';
-	else if (percentage <= -20) return '🎉';
-	else if (percentage <= -10) return '👏';
-	else if (percentage <= -5) return '✅';
-	return '';
-}
-
-/**
  * Create a Markdown table from text rows
  * @param {string[][]} rows
  */
@@ -112,23 +93,17 @@ export function diffTable(files, { collapseUnchanged, omitUnchanged, minimumChan
 	let changedRows = [];
 	let unChangedRows = [];
 
-	let totalSize = 0;
-	let totalDelta = 0;
 	for (const file of files) {
 		const { filename, size, delta } = file;
-		totalSize += size;
-		totalDelta += delta;
 
-		const originalSize = size - delta;
-		const isUnchanged = Math.abs(delta) < minimumChangeThreshold;
+		const isUnchanged = delta.length;
 
 		if (isUnchanged && omitUnchanged) continue;
 
 		const columns = [
 			`\`${filename}\``, 
-			prettyBytes(size), 
-			getDeltaText(delta, originalSize),
-			iconForDifference(delta, originalSize)
+			size, 
+			delta
 		];
 		if (isUnchanged && collapseUnchanged) {
 			unChangedRows.push(columns);
