@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DependencyPlugin 1`] = `
+[
+  {
+    "dependency": "wp-block-editor, wp-blocks, wp-components, wp-element",
+    "difference": "",
+    "filename": "fixtures/after/index.asset.php",
+  },
+  {
+    "dependency": "wp-block-editor, wp-blocks, wp-components",
+    "difference": "",
+    "filename": "fixtures/before/index.asset.php",
+  },
+]
+`;

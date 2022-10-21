@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`diffTable 1`] = `
+"| Filename | Dependencies | Change |  |
+| :--- | :---: | :---: | :---: |
+| \`one.js\` | 5 kB | +2.5 kB (+100%) | 🆘 |
+| \`two.js\` | 5 kB | -2.5 kB (-33%) | 🎉 |
+| \`four.js\` | 4.5 kB | +9 B (0%) |  |
+
+<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
+
+| Filename | Dependencies |
+| :--- | :---: |
+| \`three.js\` | 300 B |
+
+</details>
+
+"
+`;
+
+exports[`diffTable 2`] = `
+"| Filename | Dependencies | Change |  |
+| :--- | :---: | :---: | :---: |
+| \`one.js\` | 5 kB | +2.5 kB (+100%) | 🆘 |
+| \`two.js\` | 5 kB | -2.5 kB (-33%) | 🎉 |
+| \`four.js\` | 4.5 kB | +9 B (0%) |  |
+
+<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
+
+| Filename | Dependencies |
+| :--- | :---: |
+| \`three.js\` | 300 B |
+
+</details>
+
+"
+`;
+
+exports[`diffTable 3`] = `
+"| Filename | Dependencies | Change |  |
+| :--- | :---: | :---: | :---: |
+| \`one.js\` | 5 kB | +2.5 kB (+100%) | 🆘 |
+| \`two.js\` | 5 kB | -2.5 kB (-33%) | 🎉 |
+| \`three.js\` | 300 B | 0 B |  |
+| \`four.js\` | 4.5 kB | +9 B (0%) |  |"
+`;
+
+exports[`diffTable 4`] = `
+"| Filename | Dependencies | Change |  |
+| :--- | :---: | :---: | :---: |
+| \`one.js\` | 5 kB | +2.5 kB (+100%) | 🆘 |
+| \`two.js\` | 5 kB | -2.5 kB (-33%) | 🎉 |
+| \`four.js\` | 4.5 kB | +9 B (0%) |  |"
+`;
+
+exports[`diffTable 5`] = `
+"| Filename | Dependencies | Change |  |
+| :--- | :---: | :---: | :---: |
+| \`one.js\` | 5 kB | +2.5 kB (+100%) | 🆘 |
+| \`two.js\` | 5 kB | -2.5 kB (-33%) | 🎉 |
+
+<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
+
+| Filename | Dependencies | Change |
+| :--- | :---: | :---: |
+| \`three.js\` | 300 B | 0 B |
+| \`four.js\` | 4.5 kB | +9 B (0%) |
+
+</details>
+
+"
+`;
+
+exports[`diffTable 6`] = `
+"
+
+<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
+
+| Filename | Dependencies |
+| :--- | :---: |
+| \`one.js\` | 5 kB |
+| \`two.js\` | 5 kB |
+| \`three.js\` | 300 B |
+| \`four.js\` | 4.5 kB |
+
+</details>
+
+"
+`;
+
+exports[`diffTable 7`] = `
+"
+
+<details><summary>ℹ️ <strong>View Unchanged</strong></summary>
+
+| Filename | Dependencies |
+| :--- | :---: |
+| \`three.js\` | 300 B |
+
+</details>
+
+"
+`;
+
+exports[`parseAssetFile 1`] = `
+{
+  "dependencies": [
+    "wp-block-editor",
+    "wp-blocks",
+    "wp-components",
+    "wp-element",
+  ],
+  "version": "176fde31d1a79ed7ca30",
+}
+`;

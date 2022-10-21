@@ -1,0 +1,35 @@
+name: 'monitor-generated-wordpress-dependencies-action'
+description: 'Get WordPress asset dependency differences for every PR'
+author: 'Fabian Kägy'
+branding:
+  icon: 'archive'
+  color: 'purple'
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+    required: false
+    default: ${{ github.token }}
+  clean-script:
+    description: 'An npm-script that cleans/resets state between branch builds'
+  build-script:
+    description: 'The npm-script to run that builds your project'
+    default: 'build'
+  show-total:
+    description: 'Show total size and difference.'
+    default: 'true'
+  collapse-unchanged:
+    description: 'Move unchanged files into a separate collapsed table'
+    default: 'true'
+  omit-unchanged:
+    description: 'Exclude unchanged files from the sizes table entirely'
+  pattern:
+    description: 'minimatch pattern of files to track'
+    default:  '**/dist/**/*.asset.php'
+  exclude:
+    description: 'minimatch pattern of files NOT to track'
+    default: '{**/*.map,**/node_modules/**}'
+  cwd:
+    description: 'A custom working directory to execute the action in relative to repo root (defaults to .)'
+runs:
+  using: 'node16'
+  main: 'index.js'
