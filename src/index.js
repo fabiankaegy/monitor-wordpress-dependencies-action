@@ -2,8 +2,8 @@ import path from 'path';
 import { getInput, setFailed, startGroup, endGroup, debug } from '@actions/core';
 import { context, getOctokit } from '@actions/github';
 import { exec } from '@actions/exec';
-import DependencyPlugin from './lib/dependency-plugin.js';
-import { fileExists, diffTable, toBool } from './lib/utils.js';
+import { DependencyPlugin } from './dependency-plugin.js';
+import { fileExists, diffTable, toBool } from './utils.js';
 
 /**
  * @typedef {ReturnType<typeof import("@actions/github").getOctokit>} Octokit

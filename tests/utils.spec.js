@@ -1,4 +1,4 @@
-import { toBool, getDeltaText, iconForDifference, diffTable, fileExists, parseAssetFile } from '../lib/utils.js';
+import { toBool, getDeltaText, iconForDifference, diffTable, fileExists, parseAssetFile } from '../src/utils.js';
 import path from 'path';
 
 test('toBool', () => {

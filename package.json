@@ -26,6 +26,7 @@
 		"chalk": "^5.1.2",
 		"fs-extra": "^10.1.0",
 		"glob": "^8.0.3",
+		"microbundle": "^0.15.1",
 		"minimatch": "^5.1.0",
 		"php-array-parser": "^1.0.1",
 		"pretty-bytes": "^5.4.1",
