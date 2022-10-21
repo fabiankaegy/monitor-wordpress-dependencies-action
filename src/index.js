@@ -170,19 +170,6 @@ async function run(octokit, context, token) {
 	if (context.eventName !== 'pull_request' && context.eventName !== 'pull_request_target') {
 		console.log('No PR associated with this action run. Not posting a check or comment.');
 		outputRawMarkdown = false;
-	} else if (toBool(getInput('use-check'))) {
-		if (token) {
-			const finish = await createCheck(octokit, context);
-			await finish({
-				conclusion: 'success',
-				output: {
-					title: `Monitor Generated WordPress Dependencies Action`,
-					summary: markdownDiff
-				}
-			});
-		} else {
-			outputRawMarkdown = true;
-		}
 	} else {
 		startGroup(`Updating stats PR comment`);
 		let commentId;
