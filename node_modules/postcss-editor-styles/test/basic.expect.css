@@ -1,0 +1,58 @@
+:root {
+    --color-text: #24292e;
+}
+
+.editor-styles-wrapper {
+    color: var(--color-text);
+}
+
+.editor-styles-wrapper a:not([class^="components-"]):not([class^="editor-"]):not([class^="block-"]):not([aria-owns]):not([id^="mceu_"]) {
+	text-decoration: underline;
+}
+
+.editor-styles-wrapper main a:not([class^="components-"]):not([class^="editor-"]):not([class^="block-"]):not([aria-owns]):not([id^="mceu_"]) {
+	text-decoration: none;
+}
+
+.editor-styles-wrapper {
+	background-color: green;
+}
+
+.editor-styles-wrapper .block-heading {
+    background-color: #eee;
+}
+
+.editor-styles-wrapper button:not([class^="components-"]):not([class^="editor-"]):not([class^="block-"]):not([aria-owns]):not([id^="mceu_"]),
+.editor-styles-wrapper input:not([class^="components-"]):not([class^="editor-"]):not([class^="block-"]):not([aria-owns]):not([id^="mceu_"]),
+.editor-styles-wrapper select:not([class^="components-"]):not([class^="editor-"]):not([class^="block-"]):not([aria-owns]):not([id^="mceu_"]),
+.editor-styles-wrapper textarea:not([class^="components-"]):not([class^="editor-"]):not([class^="block-"]):not([aria-owns]):not([id^="mceu_"]) {
+    font-family: inherit;
+}
+
+.editor-styles-wrapper [type="button"]:not([class^="components-"]):not([class^="editor-"]):not([class^="block-"]):not([aria-owns]):not([id^="mceu_"]),
+.editor-styles-wrapper [type="reset"]:not([class^="components-"]):not([class^="editor-"]):not([class^="block-"]):not([aria-owns]):not([id^="mceu_"]),
+.editor-styles-wrapper [type="submit"]:not([class^="components-"]):not([class^="editor-"]):not([class^="block-"]):not([aria-owns]):not([id^="mceu_"]),
+.editor-styles-wrapper button:not([class^="components-"]):not([class^="editor-"]):not([class^="block-"]):not([aria-owns]):not([id^="mceu_"]) {
+    -webkit-appearance: button;
+}
+
+
+
+.editor-styles-wrapper #my_id {
+    display: flex;
+}
+
+.editor-styles-wrapper *,
+.editor-styles-wrapper ::after,
+.editor-styles-wrapper ::before {
+    box-sizing: border-box;
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
