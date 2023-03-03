@@ -163,12 +163,12 @@ async function run(octokit, context, token) {
 	const comment = {
 		...commentInfo,
 		body:
-			'#### Generated WordPress Dependencies Stats' +
+			'#### Monitor WordPress Dependencies Action' +
 			'\n\n' +
-			'The <a href="https://github.com/fabiankaegy/monitor-generated-wordpress-dependencies-action">monitor-generated-wordpress-dependencies-action</a> action has detected some changed script dependencies between this branch and trunk. Please review and confirm the following are correct before merging.' +
+			'The <a href="https://github.com/fabiankaegy/monitor-wordpress-dependencies-action">monitor-wordpress-dependencies-action</a> action has detected some changed script dependencies between this branch and trunk. Please review and confirm the following are correct before merging.' +
 			'\n\n' +
 			markdownDiff +
-			'\n\n<a href="https://github.com/fabiankaegy/monitor-generated-wordpress-dependencies-action"><sub>monitor-generated-wordpress-dependencies-action</sub></a>'
+			'\n\n<a href="https://github.com/fabiankaegy/monitor-wordpress-dependencies-action"><sub>monitor-wordpress-dependencies-action</sub></a>'
 	};
 
 	if (context.eventName !== 'pull_request' && context.eventName !== 'pull_request_target') {
@@ -181,7 +181,7 @@ async function run(octokit, context, token) {
 			const comments = (await octokit.rest.issues.listComments(commentInfo)).data;
 			for (let i = comments.length; i--; ) {
 				const c = comments[i];
-				if (c.user.type === 'Bot' && /<sub>monitor-generated-wordpress-dependencies-action/.test(c.body)) {
+				if (c.user.type === 'Bot' && /<sub>monitor-wordpress-dependencies-action/.test(c.body)) {
 					commentId = c.id;
 					break;
 				}
@@ -233,7 +233,7 @@ async function run(octokit, context, token) {
 	if (outputRawMarkdown) {
 		console.log(
 			`
-			Error: monitor-generated-wordpress-dependencies-action was unable to comment on your PR.
+			Error: monitor-wordpress-dependencies-action was unable to comment on your PR.
 			This can happen for PR's originating from a fork without write permissions.
 			You can copy the size table directly into a comment using the markdown below:
 			\n\n${comment.body}\n\n

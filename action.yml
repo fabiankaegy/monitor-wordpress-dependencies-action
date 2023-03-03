@@ -1,4 +1,4 @@
-name: 'monitor-generated-wordpress-dependencies-action'
+name: 'monitor-wordpress-dependencies-action'
 description: 'Get WordPress asset dependency differences for every PR'
 author: 'Fabian Kägy'
 branding:
