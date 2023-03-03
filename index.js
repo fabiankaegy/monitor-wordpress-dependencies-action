@@ -163,6 +163,10 @@ async function run(octokit, context, token) {
 	const comment = {
 		...commentInfo,
 		body:
+			`#### Generated WordPress Dependencies Stats
+
+			The \`compare-assets\` action has detected some changed script dependencies between this branch and trunk. Please review and confirm the following are correct before merging. \\n\\n
+			` +
 			markdownDiff +
 			'\n\n<a href="https://github.com/fabiankaegy/monitor-generated-wordpress-dependencies-action"><sub>monitor-generated-wordpress-dependencies-action</sub></a>'
 	};
