@@ -174,7 +174,7 @@ async function run(octokit, context, token) {
 		startGroup(`Updating stats PR comment`);
 		let commentId;
 		try {
-			const comments = (await octokit.issues.listComments(commentInfo)).data;
+			const comments = (await octokit.rest.issues.listComments(commentInfo)).data;
 			for (let i = comments.length; i--; ) {
 				const c = comments[i];
 				if (c.user.type === 'Bot' && /<sub>monitor-generated-wordpress-dependencies-action/.test(c.body)) {
@@ -204,13 +204,13 @@ async function run(octokit, context, token) {
 		if (!commentId) {
 			console.log('Creating new comment');
 			try {
-				await octokit.issues.createComment(comment);
+				await octokit.rest.issues.createComment(comment);
 			} catch (e) {
 				console.log(`Error creating comment: ${e.message}`);
 				console.log(`Submitting a PR review comment instead...`);
 				try {
 					const issue = context.issue;
-					await octokit.pulls.createReview({
+					await octokit.rest.pulls.createReview({
 						owner: issue.owner,
 						repo: issue.repo,
 						pull_number: issue.number,
