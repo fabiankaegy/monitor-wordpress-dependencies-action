@@ -164,6 +164,7 @@ async function run(octokit, context, token) {
 		...commentInfo,
 		body:
 			'#### Generated WordPress Dependencies Stats' +
+			'\n\n' +
 			'The <a href="https://github.com/fabiankaegy/monitor-generated-wordpress-dependencies-action">monitor-generated-wordpress-dependencies-action</a> action has detected some changed script dependencies between this branch and trunk. Please review and confirm the following are correct before merging.' +
 			'\n\n' +
 			markdownDiff +
