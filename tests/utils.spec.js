@@ -15,27 +15,27 @@ test('diffTable', () => {
 	const files = [
 		{
 			filename: 'sample/index.asset.php',
-			dependency: 'wp-block-editor, wp-blocks, wp-element, wp-primitives',
-			added: 'wp-primitives',
-			removed: 'wp-components'
+			dependency: ['wp-block-editor', 'wp-blocks', 'wp-element', 'wp-primitives',],
+			added: ['wp-primitives'],
+			removed: ['wp-components'],
 		  },
 		  {
 			filename: 'sample/test.asset.php',
-			dependency: 'wp-block-editor, wp-blocks, wp-element, wp-primitives',
-			added: 'wp-primitives, wp-components',
-			removed: ''
+			dependency: ['wp-block-editor', 'wp-blocks', 'wp-element', 'wp-primitives',],
+			added: ['wp-primitives, wp-components'],
+			removed: [''],
 		  },
 		  {
 			filename: 'sample/hello.asset.php',
-			dependency: 'wp-block-editor, wp-blocks, wp-element, wp-primitives',
-			added: 'wp-primitives',
-			removed: ''
+			dependency: ['wp-block-editor', 'wp-blocks', 'wp-element', 'wp-primitives'],
+			added: ['wp-primitives',],
+			removed: [''],
 		  },
 		  {
 			filename: 'sample/view.asset.php',
-			dependency: 'wp-block-editor, wp-blocks, wp-element, wp-primitives',
-			added: 'wp-primitives',
-			removed: ''
+			dependency: ['wp-block-editor', 'wp-blocks', 'wp-element', 'wp-primitives'],
+			added: ['wp-primitives',],
+			removed: [''],
 		  }
 	];
 	const defaultOptions = {

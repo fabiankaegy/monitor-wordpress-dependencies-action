@@ -1,45 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`diffTable 1`] = `
-"| Filename | Dependencies | Change |  |
+"| Filename | Dependencies | Added | Removed |
 | :--- | :---: | :---: | :---: |
-| \`sample/index.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives | wp-components |
-| \`sample/test.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives, wp-components |  |
-| \`sample/hello.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |
-| \`sample/view.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |"
+| \`sample/index.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`wp-components\` |
+| \`sample/test.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives, wp-components\` | \`\` |
+| \`sample/hello.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`\` |
+| \`sample/view.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`\` |"
 `;
 
 exports[`diffTable 2`] = `
-"| Filename | Dependencies | Change |  |
+"| Filename | Dependencies | Added | Removed |
 | :--- | :---: | :---: | :---: |
-| \`sample/index.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives | wp-components |
-| \`sample/test.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives, wp-components |  |
-| \`sample/hello.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |
-| \`sample/view.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |"
+| \`sample/index.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`wp-components\` |
+| \`sample/test.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives, wp-components\` | \`\` |
+| \`sample/hello.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`\` |
+| \`sample/view.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`\` |"
 `;
 
 exports[`diffTable 3`] = `
-"| Filename | Dependencies | Change |  |
+"| Filename | Dependencies | Added | Removed |
 | :--- | :---: | :---: | :---: |
-| \`sample/index.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives | wp-components |
-| \`sample/test.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives, wp-components |  |
-| \`sample/hello.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |
-| \`sample/view.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |"
+| \`sample/index.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`wp-components\` |
+| \`sample/test.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives, wp-components\` | \`\` |
+| \`sample/hello.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`\` |
+| \`sample/view.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`\` |"
 `;
 
 exports[`diffTable 4`] = `
-"| Filename | Dependencies | Change |  |
+"| Filename | Dependencies | Added | Removed |
 | :--- | :---: | :---: | :---: |
-| \`sample/index.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives | wp-components |
-| \`sample/test.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives, wp-components |  |
-| \`sample/hello.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |
-| \`sample/view.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |"
+| \`sample/index.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`wp-components\` |
+| \`sample/test.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives, wp-components\` | \`\` |
+| \`sample/hello.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`\` |
+| \`sample/view.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`\` |"
 `;
 
 exports[`diffTable 5`] = `
-"| Filename | Dependencies | Change |
-| :--- | :---: | :---: |
-| \`sample/hello.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |"
+"| Filename | Dependencies | Added | Removed |
+| :--- | :---: | :---: | :---: |
+| \`sample/hello.asset.php\` | \`wp-block-editor\`, \`wp-blocks\`, \`wp-element\`, \`wp-primitives\` | \`wp-primitives\` | \`\` |"
 `;
 
 exports[`parseAssetFile 1`] = `
