@@ -23,19 +23,19 @@ test('diffTable', () => {
 			filename: 'sample/test.asset.php',
 			dependency: ['wp-block-editor', 'wp-blocks', 'wp-element', 'wp-primitives',],
 			added: ['wp-primitives, wp-components'],
-			removed: [''],
+			removed: [],
 		  },
 		  {
 			filename: 'sample/hello.asset.php',
 			dependency: ['wp-block-editor', 'wp-blocks', 'wp-element', 'wp-primitives'],
 			added: ['wp-primitives',],
-			removed: [''],
+			removed: [],
 		  },
 		  {
 			filename: 'sample/view.asset.php',
 			dependency: ['wp-block-editor', 'wp-blocks', 'wp-element', 'wp-primitives'],
 			added: ['wp-primitives',],
-			removed: [''],
+			removed: [],
 		  }
 	];
 	const defaultOptions = {
