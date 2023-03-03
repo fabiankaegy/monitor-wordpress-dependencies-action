@@ -189,7 +189,7 @@ async function run(octokit, context, token) {
 		if (commentId) {
 			console.log(`Updating previous comment #${commentId}`);
 			try {
-				await octokit.issues.updateComment({
+				await octokit.rest.issues.updateComment({
 					...context.repo,
 					comment_id: commentId,
 					body: comment.body
