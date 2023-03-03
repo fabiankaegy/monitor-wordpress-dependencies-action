@@ -1,63 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`diffTable 1`] = `
-"| Filename | Dependencies | Change |
-| :--- | :---: | :---: |
-| \`one.js\` | 5000 | 2500 |
-| \`two.js\` | 5000 | -2500 |
-| \`three.js\` | 300 | 0 |
-| \`four.js\` | 4500 | 9 |"
+"| Filename | Dependencies | Change |  |
+| :--- | :---: | :---: | :---: |
+| \`sample/index.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives | wp-components |
+| \`sample/test.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives, wp-components |  |
+| \`sample/hello.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |
+| \`sample/view.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |"
 `;
 
 exports[`diffTable 2`] = `
-"| Filename | Dependencies | Change |
-| :--- | :---: | :---: |
-| \`one.js\` | 5000 | 2500 |
-| \`two.js\` | 5000 | -2500 |
-| \`three.js\` | 300 | 0 |
-| \`four.js\` | 4500 | 9 |"
+"| Filename | Dependencies | Change |  |
+| :--- | :---: | :---: | :---: |
+| \`sample/index.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives | wp-components |
+| \`sample/test.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives, wp-components |  |
+| \`sample/hello.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |
+| \`sample/view.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |"
 `;
 
 exports[`diffTable 3`] = `
-"| Filename | Dependencies | Change |
-| :--- | :---: | :---: |
-| \`one.js\` | 5000 | 2500 |
-| \`two.js\` | 5000 | -2500 |
-| \`three.js\` | 300 | 0 |
-| \`four.js\` | 4500 | 9 |"
+"| Filename | Dependencies | Change |  |
+| :--- | :---: | :---: | :---: |
+| \`sample/index.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives | wp-components |
+| \`sample/test.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives, wp-components |  |
+| \`sample/hello.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |
+| \`sample/view.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |"
 `;
 
 exports[`diffTable 4`] = `
-"| Filename | Dependencies | Change |
-| :--- | :---: | :---: |
-| \`one.js\` | 5000 | 2500 |
-| \`two.js\` | 5000 | -2500 |
-| \`three.js\` | 300 | 0 |
-| \`four.js\` | 4500 | 9 |"
+"| Filename | Dependencies | Change |  |
+| :--- | :---: | :---: | :---: |
+| \`sample/index.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives | wp-components |
+| \`sample/test.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives, wp-components |  |
+| \`sample/hello.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |
+| \`sample/view.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |  |"
 `;
 
 exports[`diffTable 5`] = `
 "| Filename | Dependencies | Change |
 | :--- | :---: | :---: |
-| \`one.js\` | 5000 | 2500 |
-| \`two.js\` | 5000 | -2500 |
-| \`three.js\` | 300 | 0 |
-| \`four.js\` | 4500 | 9 |"
-`;
-
-exports[`diffTable 6`] = `
-"| Filename | Dependencies |
-| :--- | :---: |
-| \`one.js\` | 5000 |
-| \`two.js\` | 5000 |
-| \`three.js\` | 300 |
-| \`four.js\` | 4500 |"
-`;
-
-exports[`diffTable 7`] = `
-"| Filename | Dependencies |
-| :--- | :---: |
-| \`three.js\` | 300 |"
+| \`sample/hello.asset.php\` | wp-block-editor, wp-blocks, wp-element, wp-primitives | wp-primitives |"
 `;
 
 exports[`parseAssetFile 1`] = `

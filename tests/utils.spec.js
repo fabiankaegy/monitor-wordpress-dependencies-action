@@ -14,39 +14,40 @@ test('toBool', () => {
 test('diffTable', () => {
 	const files = [
 		{
-			filename: 'one.js',
-			size: 5000,
-			delta: 2500
-		},
-		{
-			filename: 'two.js',
-			size: 5000,
-			delta: -2500
-		},
-		{
-			filename: 'three.js',
-			size: 300,
-			delta: 0
-		},
-		{
-			filename: 'four.js',
-			size: 4500,
-			delta: 9
-		}
+			filename: 'sample/index.asset.php',
+			dependency: 'wp-block-editor, wp-blocks, wp-element, wp-primitives',
+			added: 'wp-primitives',
+			removed: 'wp-components'
+		  },
+		  {
+			filename: 'sample/test.asset.php',
+			dependency: 'wp-block-editor, wp-blocks, wp-element, wp-primitives',
+			added: 'wp-primitives, wp-components',
+			removed: ''
+		  },
+		  {
+			filename: 'sample/hello.asset.php',
+			dependency: 'wp-block-editor, wp-blocks, wp-element, wp-primitives',
+			added: 'wp-primitives',
+			removed: ''
+		  },
+		  {
+			filename: 'sample/view.asset.php',
+			dependency: 'wp-block-editor, wp-blocks, wp-element, wp-primitives',
+			added: 'wp-primitives',
+			removed: ''
+		  }
 	];
 	const defaultOptions = {
 		showTotal: true,
 		collapseUnchanged: true,
 		omitUnchanged: false,
-		minimumChangeThreshold: 1
 	};
 
 	expect(diffTable(files, { ...defaultOptions })).toMatchSnapshot();
 	expect(diffTable(files, { ...defaultOptions, showTotal: false })).toMatchSnapshot();
 	expect(diffTable(files, { ...defaultOptions, collapseUnchanged: false })).toMatchSnapshot();
 	expect(diffTable(files, { ...defaultOptions, omitUnchanged: true })).toMatchSnapshot();
-	expect(diffTable(files, { ...defaultOptions, minimumChangeThreshold: 10 })).toMatchSnapshot();
-	expect(diffTable(files.map(file => ({...file, delta: 0})), { ...defaultOptions })).toMatchSnapshot();
 
 	expect(diffTable([files[2]], { ...defaultOptions })).toMatchSnapshot();
 });

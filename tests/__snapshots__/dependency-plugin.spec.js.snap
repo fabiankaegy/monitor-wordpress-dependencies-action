@@ -3,14 +3,27 @@
 exports[`DependencyPlugin 1`] = `
 [
   {
+    "added": "",
     "dependency": "wp-block-editor, wp-blocks, wp-components, wp-element",
-    "difference": "",
     "filename": "fixtures/after/index.asset.php",
+    "removed": "",
   },
   {
+    "added": "",
     "dependency": "wp-block-editor, wp-blocks, wp-components",
-    "difference": "",
     "filename": "fixtures/before/index.asset.php",
+    "removed": "",
+  },
+]
+`;
+
+exports[`DependencyPluginOutput 1`] = `
+[
+  {
+    "added": "wp-primitives",
+    "dependency": "wp-block-editor, wp-blocks, wp-element, wp-primitives",
+    "filename": "sample/index.asset.php",
+    "removed": "wp-components",
   },
 ]
 `;
