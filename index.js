@@ -2,7 +2,7 @@ const path = require('path');
 const { getInput, setFailed, startGroup, endGroup, debug } = require('@actions/core');
 const { context, getOctokit } = require('@actions/github');
 const { exec } = require('@actions/exec');
-const { DependencyPlugin } = require('./lib/dependency-plugin.js');
+const DependencyPlugin = require('./lib/dependency-plugin.js');
 const { fileExists, diffTable, toBool } = require('./lib/utils.js');
 
 /**
