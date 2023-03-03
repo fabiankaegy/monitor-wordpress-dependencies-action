@@ -1,9 +1,9 @@
-import path from 'path';
-import { getInput, setFailed, startGroup, endGroup, debug } from '@actions/core';
-import { context, getOctokit } from '@actions/github';
-import { exec } from '@actions/exec';
-import { DependencyPlugin } from './dependency-plugin.js';
-import { fileExists, diffTable, toBool } from './utils.js';
+const path = require('path');
+const { getInput, setFailed, startGroup, endGroup, debug } = require('@actions/core');
+const { context, getOctokit } = require('@actions/github');
+const { exec } = require('@actions/exec');
+const { DependencyPlugin } = require('./lib/dependency-plugin.js');
+const { fileExists, diffTable, toBool } = require('./lib/utils.js');
 
 /**
  * @typedef {ReturnType<typeof import("@actions/github").getOctokit>} Octokit
@@ -41,8 +41,8 @@ async function run(octokit, context, token) {
 	if (getInput('cwd')) process.chdir(getInput('cwd'));
 
 	const plugin = new DependencyPlugin({
-		pattern: getInput('pattern') || '**/dist/**/*.asset.php',
-		exclude: getInput('exclude') || '{**/*.map,**/node_modules/**}',
+		pattern: getInput('pattern') || '**/*.asset.php',
+		exclude: getInput('exclude') || '{**/node_modules/**,**/vendor/**}',
 	});
 
 	const buildScript = getInput('build-script') || 'build';

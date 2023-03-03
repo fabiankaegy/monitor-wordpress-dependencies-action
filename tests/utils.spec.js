@@ -1,5 +1,5 @@
-import { toBool, diffTable, fileExists, parseAssetFile } from '../src/utils.js';
-import path from 'path';
+const { toBool, diffTable, fileExists, parseAssetFile } = require('../lib/utils.js');
+const path = require('path');
 
 test('toBool', () => {
 	expect(toBool('1')).toBe(true);

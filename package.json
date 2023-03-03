@@ -5,7 +5,6 @@
 	"main": "./dist/index.js",
     "source": "./src/index.js",
 	"scripts": {
-		"build": "10up-toolkit build",
 		"test": "jest"
 	},
 	"repository": {
@@ -38,7 +37,6 @@
 		"@babel/core": "^7.19.6",
 		"@babel/preset-env": "^7.19.4",
 		"@types/jest": "^29.2.0",
-		"10up-toolkit": "^4.3.0",
 		"babel-jest": "^29.2.1",
 		"jest": "^29.2.1"
 	},
@@ -72,10 +70,5 @@
 				}
 			]
 		]
-	},
-	"10up-toolkit": {
-		"entry": {
-			"index": "src/index.js"
-		}
 	}
 }

@@ -1,4 +1,4 @@
-import { DependencyPlugin } from '../src/dependency-plugin.js';
+const { DependencyPlugin } = require('../lib/dependency-plugin.js');
 
 test('DependencyPlugin', async () => {
 	const plugin = new DependencyPlugin({
