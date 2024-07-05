@@ -1,6 +1,0 @@
-{
-  "entryPoints": ["src/index.ts", "src/defaults.ts", "src/lib/validation.ts"],
-  "readme": "none",
-  "out": "docs",
-  "includeVersion": true
-}
